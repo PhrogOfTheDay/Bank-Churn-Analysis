@@ -16,8 +16,8 @@ INTERIM_DATA_DIR = DATA_DIR / "interim"
 PROCESSED_DATA_DIR = DATA_DIR / "processed"
 EXTERNAL_DATA_DIR = DATA_DIR / "external"
 
+RAW_DATA_PATH = RAW_DATA_DIR / "Churn_Modelling.csv"
 MODELS_DIR = PROJ_ROOT / "models"
-
 REPORTS_DIR = PROJ_ROOT / "reports"
 FIGURES_DIR = REPORTS_DIR / "figures"
 

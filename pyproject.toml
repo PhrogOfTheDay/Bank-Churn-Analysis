@@ -16,8 +16,10 @@ classifiers = [
     
 ]
 dependencies = [
+    "imblearn>=0.0",
     "ipython",
     "jupyterlab",
+    "keras>=3.12.4",
     "loguru",
     "matplotlib",
     "mkdocs",
@@ -29,8 +31,11 @@ dependencies = [
     "python-dotenv",
     "ruff",
     "scikit-learn",
+    "seaborn>=0.13.2",
+    "tensorflow>=2.21.0",
     "tqdm",
     "typer",
+    "xgboost>=3.2.0",
 ]
 requires-python = "~=3.10.0"
 
@@ -38,8 +43,8 @@ requires-python = "~=3.10.0"
 [tool.ruff]
 line-length = 99
 src = ["bank_churn_predictions"]
-include = ["pyproject.toml", "bank_churn_predictions/**/*.py"]
-
+include = ["pyproject.toml", "bank_churn_predictions/**/*.py","bank_churn_predictions/**/*.ipynb"]
+extend-include = ["*.ipynb"]
 [tool.ruff.lint]
 extend-select = ["I"]  # Add import sorting
 
